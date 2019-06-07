@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "cd844173-0cdc-433a-88ed-718a0d01e67a",
+		"name": "Tarea",
+		"description": "Tarea1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/api/personas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/personas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"personas"
+					]
+				},
+				"description": "Lista"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/personas?\"clase\"= Seminario2&\"seccion\"=1801&\"cupos\"= \"0\",&\"docente\"= \"Orlando\"",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/personas?\"clase\"= Seminario2&\"seccion\"=1801&\"cupos\"= \"0\",&\"docente\"= \"Orlando\"",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"personas"
+					],
+					"query": [
+						{
+							"key": "\"clase\"",
+							"value": " Seminario2"
+						},
+						{
+							"key": "\"seccion\"",
+							"value": "1801"
+						},
+						{
+							"key": "\"cupos\"",
+							"value": " \"0\","
+						},
+						{
+							"key": "\"docente\"",
+							"value": " \"Orlando\""
+						}
+					]
+				},
+				"description": "Guardar"
+			},
+			"response": []
+		}
+	]
+}
